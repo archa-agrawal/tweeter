@@ -28,3 +28,7 @@
 .counter{
   font-family: Bungee, sans-serif;
 }
+
+.counter-minus{
+  color: red;
+}
