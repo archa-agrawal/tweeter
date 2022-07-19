@@ -1,3 +1,4 @@
+// this function implements the character counter.
 $(document).ready(function() {
   const initialCount = 140;
 
@@ -9,7 +10,6 @@ $(document).ready(function() {
       $(counter).addClass('counter-minus');
     }else{
       $(counter).removeClass('counter-minus');
-    }
-    
+    }  
   })
 });
