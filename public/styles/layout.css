@@ -34,6 +34,7 @@ body {
    justify-content: center;
    align-items: center;
    background-color: #f4f1ec;
+   flex-direction: column;
  }
 
  

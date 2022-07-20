@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
+
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -61,25 +63,22 @@
           </div>
         </form>
       </section>
-      <section>
-        <article>
-          <header>
-            <img src="/images/isabelle.png" class="avatar">
-            <h5>Iabelle</h5>
-            <h5>@DrTurner</h5>
+      <section class="all-tweets-container">
+        <article class="tweet">
+          <header class="tweet-header" >
+            <img src="/images/isabelle.png">
+            <h5 class="tweet-name">Isabelle Turner</h5>
+            <h5 class="tweet-handle">@DrTurner</h5>
           </header>
-          <p>"Science is always wrong. It never solves a problem without creating ten more."</p>
-          <footer>
-            <p>2 days ago</p>
+          <p class="tweet-content">Science is always wrong. It never solves a problem without creating ten more.</p>
+          <hr>
+          <footer class="tweet-footer">
+            <p class="tweet-time">2 days ago</p>
             <div>
               <i class="fa-solid fa-flag"></i>
               <i class="fa-solid fa-retweet"></i>
               <i class="fa-solid fa-heart"></i>
-
             </div>
-
-            
-
           </footer>
         </article>
 

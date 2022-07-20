@@ -5,12 +5,14 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: end;
-  background-color: coral;
-  background-image: url(../images/3px-tile.png);
+  background-color: #008bf5;
+  background-image: url(../images/clean-gray-paper.png);
 }
 .avatar {
-  width: 200px;
-  height: 200px;
+  max-width:200px;
+  max-height:200px;
+  width: auto;
+  height: auto;
 }
 
 h2 {
