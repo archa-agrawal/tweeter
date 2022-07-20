@@ -32,6 +32,9 @@
   height: auto;
  
 }
+.tweet-name{
+  padding-left: 20px;
+}
 .tweet-handle{
   margin-left: auto;
   color: gray;
@@ -69,7 +72,4 @@ hr {
   margin-left: 24px;
   border-width: 1px;
   border-color: black;
-}
-.tweet-name{
-  padding-left: 20px;
 }
