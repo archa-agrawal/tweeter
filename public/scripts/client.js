@@ -52,12 +52,20 @@ $(document).ready(function() {
 
   $("#post-new-tweet").submit((event) => {
     event.preventDefault();
+    const newTweet = $("#tweet-text").val();
+    if (!newTweet) {
+      return alert('Cannot submit an empty tweet!')
+    }
+    if (newTweet.length > 140) {
+      return alert('Message too long!')
+    }
+    console.log(newTweet)
 
-    const newTweet = $("#tweet-text").serialize();
+    const newTweetSerialized = $("#tweet-text").serialize();
 
     $.ajax(`/tweets`, {
       method: 'post',
-      data: newTweet
+      data: newTweetSerialized
     });
   });
 
