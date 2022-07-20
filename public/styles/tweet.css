@@ -9,6 +9,9 @@
   background-color: inherit;
   margin-top: 50px;
 }
+.tweet:hover{
+  box-shadow: 5px 5px;
+}
 .tweet-header {
   height: 60px;
   display: flex;
