@@ -59,6 +59,8 @@ $(document).ready(function() {
 
   $("#post-new-tweet").submit((event) => {
     event.preventDefault();
+    $("#content-empty").hide()
+    $("#content-too-long").hide()
     const newTweet = $("#tweet-text").val();
     if (!newTweet) {
       return $("#content-empty").slideDown('slow');

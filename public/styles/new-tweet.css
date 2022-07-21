@@ -33,3 +33,13 @@
 .counter-minus{
   color: red;
 }
+
+#content-empty, #content-too-long {
+  width: fit-content;
+    color: red;
+    border: 2px solid black;
+    padding: 5px;
+    margin-left: 400px;
+    background-color: bisque;
+    font-weight: bold;
+}
