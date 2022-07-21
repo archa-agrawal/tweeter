@@ -45,9 +45,9 @@ $(document).ready(function() {
   const renderTweets = function(tweets) {
     tweets.sort((a,b) => {
       if(a.created_at < b.created_at){
-        return 1
+        return 1;
       }else{
-        return -1
+        return -1;
       }
     })
     
@@ -61,10 +61,10 @@ $(document).ready(function() {
     event.preventDefault();
     const newTweet = $("#tweet-text").val();
     if (!newTweet) {
-      return alert('Cannot submit an empty tweet!')
+      return $("#content-empty").slideDown('slow');
     }
     if (newTweet.length > 140) {
-      return alert('Message too long!')
+      return $("#content-too-long").slideDown('slow');;
     }
 
     const newTweetSerialized = $("#tweet-text").serialize();
@@ -85,6 +85,8 @@ $(document).ready(function() {
 
     $.ajax('http://localhost:8080/tweets', {method : 'GET'})
     .then(response => {
+      $("#content-empty").hide()
+      $("#content-too-long").hide()
       renderTweets(response)
     })
   }

@@ -29,6 +29,8 @@
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
+    
   </head>
 
   <body>
@@ -56,6 +58,8 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
+        <div id="content-empty">Cannot submit an empty message</div>
+        <div id="content-too-long">Message cannot exceed the word limit</div>
         <form id="post-new-tweet" method="POST" action="/tweets">
           <textarea name="text" id="tweet-text" class="tweet-text" placeholder="What are you humming about?"></textarea>
           <div class="submit">
