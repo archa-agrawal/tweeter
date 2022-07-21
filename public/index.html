@@ -53,7 +53,7 @@
   <body>
     <!-- Top nav bar (fixed) -->
 
-    <nav>
+    <nav class="navigation">
       <span>tweeter</span>
       <aside class="new-tweet-nav">
         <div><strong>Write</strong> a new tweet</div>
@@ -62,8 +62,8 @@
         </div>
       </aside>
     </nav>
-    <div class="header-and-container">
-      <header>
+    <div class="page">
+      <header class="page-header">
         <div>
           <img src="/images/Judy.png" class="avatar" />
         </div>
@@ -75,8 +75,8 @@
       <!-- Page-specific (main) content here -->
       <main class="container">
         <section class="new-tweet">
-          <div id="content-empty">Cannot submit an empty message</div>
-          <div id="content-too-long">Message cannot exceed the word limit</div>
+          <div id="content-empty" class="error">Cannot submit an empty message</div>
+          <div id="content-too-long" class="error">Message cannot exceed the word limit</div>
           <form id="post-new-tweet" method="POST" action="/tweets">
             <textarea
               name="text"

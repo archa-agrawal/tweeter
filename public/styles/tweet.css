@@ -21,6 +21,7 @@
   background-image: none;
   padding-left: 24px;
   padding-right: 24px;
+  align-items: center;
 }
 .tweet-header > img {
   background-image: none;
@@ -69,6 +70,10 @@ hr {
   margin-left: 24px;
   border-width: 1px;
   border-color: black;
+}
+
+.error {
+  display: none;
 }
 
 @media screen and (min-width: 1024px) {

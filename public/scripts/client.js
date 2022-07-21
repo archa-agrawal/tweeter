@@ -56,7 +56,7 @@ $(document).ready(function() {
     event.preventDefault();
     $("#content-empty").hide();
     $("#content-too-long").hide();
-    const newTweet = $("#tweet-text").val();
+    const newTweet = $("#tweet-text").val().trim();
     if (!newTweet) {
       return $("#content-empty").slideDown("slow");
     }
@@ -80,8 +80,6 @@ $(document).ready(function() {
   const loadTweets = function() {
     $.ajax("http://localhost:8080/tweets", { method: "GET" }).then(
       (response) => {
-        $("#content-empty").hide();
-        $("#content-too-long").hide();
         renderTweets(response);
       }
     );
