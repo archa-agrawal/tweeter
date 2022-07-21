@@ -75,8 +75,6 @@
       <!-- Page-specific (main) content here -->
       <main class="container">
         <section class="new-tweet">
-          <div id="content-empty" class="error">Cannot submit an empty message</div>
-          <div id="content-too-long" class="error">Message cannot exceed the word limit</div>
           <form id="post-new-tweet" method="POST" action="/tweets">
             <textarea
               name="text"
@@ -87,10 +85,11 @@
             <div class="submit">
               <button type="submit" class="submit-button">Tweet</button>
               <output name="counter" id="counter" class="counter" for="tweet-text"
-                >140</output
-              >
+                >140</output>
             </div>
           </form>
+          <div id="content-empty" class="error">Cannot submit an empty message</div>
+          <div id="content-too-long" class="error">Message cannot exceed the word limit</div>
         </section>
         <section class="all-tweets-container" id="tweets-container"></section>
       </main>

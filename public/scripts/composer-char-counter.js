@@ -1,4 +1,4 @@
-// this function implements the character counter.
+// This function implements the character counter.
 $(document).ready(function() {
   const initialCount = 140;
 
