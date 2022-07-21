@@ -9,12 +9,21 @@ header {
   background-image: url(../images/clean-gray-paper.png);
 }
 .avatar {
-  max-width:200px;
-  max-height:200px;
+  max-width: 200px;
+  max-height: 200px;
   width: auto;
   height: auto;
 }
 
 h2 {
   margin: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    margin-top: 50px;
+    height: 40%;
+    width: 30%;
+    align-items: center;
+  }
 }

@@ -1,4 +1,4 @@
-.all-tweets-container{
+.all-tweets-container {
   width: 100%;
 }
 .tweet {
@@ -9,7 +9,7 @@
   background-color: inherit;
   margin-top: 50px;
 }
-.tweet:hover{
+.tweet:hover {
   box-shadow: 5px 5px;
 }
 .tweet-header {
@@ -21,31 +21,28 @@
   background-image: none;
   padding-left: 24px;
   padding-right: 24px;
-
 }
-.tweet-header > img { 
-
+.tweet-header > img {
   background-image: none;
-  max-width:50px;
-  max-height:50px;
+  max-width: 50px;
+  max-height: 50px;
   width: auto;
   height: auto;
- 
 }
-.tweet-name{
+.tweet-name {
   padding-left: 20px;
 }
-.tweet-handle{
+.tweet-handle {
   margin-left: auto;
   color: gray;
   opacity: 0.4;
 }
 
-.tweet-content{
+.tweet-content {
   padding-left: 40px;
   padding-right: 40px;
 }
-.tweet-footer{
+.tweet-footer {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -53,18 +50,18 @@
   padding-left: 40px;
   padding-bottom: 10px;
 }
-.tweet-time{
+.tweet-time {
   font-size: 14px;
 }
-.tweet-footer .fa-solid{
+.tweet-footer .fa-solid {
   font-size: 14px;
 }
 
-.tweet-footer .fa-solid:hover{
-  color:#008bf5;
+.tweet-footer .fa-solid:hover {
+  color: #008bf5;
   cursor: pointer;
 }
- 
+
 hr {
   margin-top: 24px;
   margin-bottom: 0;
@@ -72,4 +69,15 @@ hr {
   margin-left: 24px;
   border-width: 1px;
   border-color: black;
+}
+
+@media screen and (min-width: 1024px) {
+  .tweet-header {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .tweet-handle {
+    margin-left: auto;
+  }
 }
