@@ -43,6 +43,13 @@ $(document).ready(function() {
   }
   
   const renderTweets = function(tweets) {
+    tweets.sort((a,b) => {
+      if(a.created_at < b.created_at){
+        return 1
+      }else{
+        return -1
+      }
+    })
     
     tweets.forEach(tweet => {
       const tweetsElement = createTweetElement(tweet);
@@ -59,14 +66,19 @@ $(document).ready(function() {
     if (newTweet.length > 140) {
       return alert('Message too long!')
     }
-    console.log(newTweet)
 
     const newTweetSerialized = $("#tweet-text").serialize();
 
     $.ajax(`/tweets`, {
       method: 'post',
       data: newTweetSerialized
-    });
+    })
+    .then(() => {
+      $("#tweet-text").val("");
+      $("#counter").val(140);
+      $("#tweets-container").empty();
+      loadTweets()
+    })
   });
 
   const loadTweets = function() {
