@@ -1,8 +1,9 @@
+/* Styling new tweet container*/
 .new-tweet {
   width: 100%;
   padding-top: 30px;
 }
-
+/* Styling tweet text-area*/
 .tweet-text {
   width: 100%;
   box-sizing: border-box;
@@ -13,27 +14,26 @@
   height: 40px;
   outline: none;
 }
-
+/* Styling submit div*/
 .submit {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
+/* Styling submit button*/
 .submit-button {
   font-family: Bungee, sans-serif;
   background-color: #4056a1;
   color: #ffffff;
 }
-
+/* Styling submit counter*/
 .counter {
   font-family: Bungee, sans-serif;
 }
-
 .counter-minus {
   color: red;
 }
-
+/* Styling error msgs*/
 #content-empty,
 #content-too-long {
   width: fit-content;

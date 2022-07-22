@@ -1,6 +1,8 @@
+/* Styling tweets container*/
 .all-tweets-container {
   width: 100%;
 }
+/* Styling individual tweet container*/
 .tweet {
   box-sizing: border-box;
   resize: none;
@@ -38,7 +40,6 @@
   color: gray;
   opacity: 0.4;
 }
-
 .tweet-content {
   padding-left: 40px;
   padding-right: 40px;
@@ -57,7 +58,6 @@
 .tweet-footer .fa-solid {
   font-size: 14px;
 }
-
 .tweet-footer .fa-solid:hover {
   color: #008bf5;
   cursor: pointer;
@@ -76,13 +76,11 @@ hr {
   display: none;
 }
 
+/* Styling tweet container for desktop*/
 @media screen and (min-width: 1024px) {
   .tweet-header {
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
-  }
-  .tweet-handle {
-    margin-left: auto;
   }
 }

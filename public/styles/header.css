@@ -1,3 +1,4 @@
+/* Styling header*/
 .page-header {
   display: flex;
   height: 400px;
@@ -8,30 +9,29 @@
   background-color: #008bf5;
   background-image: url(../images/clean-gray-paper.png);
 }
+/*styling avatar*/
 .avatar {
   max-width: 200px;
   max-height: 200px;
   width: auto;
   height: auto;
 }
-
+/*styling name*/
 h2 {
   margin: 0;
   color: white;
 }
-
+/* Styling header for desktop*/
 @media screen and (min-width: 1024px) {
   .page-header {
     margin-top: 50px;
     height: 40%;
     width: 30%;
-    align-items: center;
   }
 }
-
+/*styling header for small screens*/
 @media screen and (max-width: 1024px) {
   .page-header {
-    width: 100vw;
     position: relative;
     left: 50%;
     right: 50%;
